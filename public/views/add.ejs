@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("partial/head-meta.ejs") %>
+    <title>Index</title>
+</head>
+
+<body>
+    <%- include("partial/navbar") %>
+    <div class="container-fluid">
+        <h1 class="text-center">Add New Entry</h1>
+
+        <main class="form-signin">
+            <form action="/add" method="POST">
+                <input class="form-control w-100" type="text" name="nama" placeholder="Masukan Nama">
+                <input class="form-control w-100" type="text" name="hoby" placeholder="Masukan Hoby">
+                <button class="w-100 btn btn-lg btn-primary mt-3" name="submit" type="submit">Submit</button>
+            </form>
+        </main>
+    </div>
+    </div>
+
+
+    <script src="public/script.js"></script>
+    <script type="text/javascript" src="public/script/bootstrap.min.js"></script>
+</body>
+
+</html>
